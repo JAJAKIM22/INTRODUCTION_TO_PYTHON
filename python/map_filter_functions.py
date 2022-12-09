@@ -1,0 +1,17 @@
+menu = ["capaccino", "espresso", "latte", "cortado", "americana" ]
+
+def find_coffee(coffee):
+    if coffee[0]== 'c':
+        return coffee
+
+map_coffee = map(find_coffee, menu) #OBJECT
+print(map_coffee)
+
+for x in map_coffee:
+    print(x)
+
+filter_coffee = filter(find_coffee, menu)
+print(filter_coffee)
+
+for a in filter_coffee:
+    print(a)
